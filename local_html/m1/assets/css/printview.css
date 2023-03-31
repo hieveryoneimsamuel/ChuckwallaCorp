@@ -32,10 +32,38 @@ table.colors {
     visibility: visible;
     position: absolute;
     top: 200px;
+    border: 1px solid;
+    border-collapse: collapse;
+    width: 50%;
 }
 
 table.square-table {
     visibility: visible;
     position: absolute;
     top: 500px;
+    width: 50%;
+    border-collapse: collapse;
+}
+
+
+table.colors caption {
+    border: 1px solid;
+}
+
+table.colors td {
+    border: 1px solid;
+    padding: 5px;
+}
+
+table.colors td.col-one {
+    width: 20%;
+}
+
+table.colors td.col-two {
+    width: 80%;
+}
+
+table.square-table td {
+    border: 1px solid;
+    padding: 5px;
 }
