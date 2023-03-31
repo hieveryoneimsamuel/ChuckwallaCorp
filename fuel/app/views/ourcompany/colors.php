@@ -39,7 +39,7 @@
 
         for($x=0; $x < $_GET['val2']; $x++){
             echo "<tr>
-                <td>
+                <td class='col-one'>
                     <select name='colorchoice'>
                         <option value='red'>Red</option>
                         <option value='orange'>Orange</option>
@@ -53,7 +53,7 @@
                         <option value='teal'>Teal</option>
                     </select>
                 </td>
-                <td>COL2</td>";
+                <td class='col-two'>COL2</td>";
                 
         }
         echo "
