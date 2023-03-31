@@ -29,6 +29,14 @@ class Controller_company extends Controller_Template
 		$this->template->css = "chuckwalla.css";
 
 	}
+	
+	public function action_print(){
+		$data = array();
+		$this->template->title = "Print View";
+		$this->template->content = View::forge('ourcompany/colors.php'); 
+		$this->template->css = "printview.css";
+
+	}
 
 }
 ?>
