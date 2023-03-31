@@ -1,0 +1,102 @@
+body {
+    width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #F19149;
+}
+
+header {
+    background-color: #ffe3cd;
+    display: flex;
+    padding: 15px;
+    font-family: 'Merriweather', serif;
+    border: 3px solid #61574F;
+}
+
+header #header-content {
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 4em;
+    text-transform: uppercase;
+}
+
+header img {
+    width: 200px;
+    padding: 5px 15px;
+}
+
+nav {
+    background-color: #61574F;
+    font-size: 1.2em;
+    padding-left: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+nav a {
+    color: #ffe3cd;
+    text-decoration: none;
+}
+
+nav ol {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+}
+
+nav ol li a:hover {
+    color: #F19149;
+}
+
+#content {
+    background-color: #ffe3cd;
+    font-family: 'Rubik', sans-serif;
+    padding: 10px 25px;
+    border: 3px solid #61574F;
+}
+
+h2 {
+    text-align: center;
+    text-transform: uppercase;
+    color: #F19149;
+}
+
+h3 {
+    text-transform: uppercase;
+}
+
+footer {
+    background-color: #61574F;
+    color: #ffe3cd;
+    padding-left: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    text-align: center;
+}
+
+div.about-div {
+    display: flex;
+}
+
+div #about-person h3 {
+    text-align: center;
+    text-transform: uppercase;
+}
+
+div #about-person {
+    width: 33%;
+    margin: 10px;
+    border: 2px solid #F19149;
+    text-align: justify;
+    padding: 10px;
+    background-color: white;
+}
+
+div #about-person img {
+    width: 250px;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+}
