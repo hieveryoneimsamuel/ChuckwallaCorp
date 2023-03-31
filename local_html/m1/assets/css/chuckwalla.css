@@ -100,3 +100,17 @@ div #about-person img {
     margin-right: auto;
     margin-left: auto;
 }
+
+table.colors {
+    border: 1px solid;
+    border-collapse: collapse;
+    width: 90%;
+}
+
+table.colors caption {
+    border: 1px solid;
+}
+
+table.colors th, td {
+    border: 1px solid;
+}
