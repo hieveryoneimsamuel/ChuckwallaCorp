@@ -21,9 +21,9 @@
     <div class="links">
         <nav>
             <ol>
-                <li><a href="./index">HOME</a></li>
-                <li><a href="./colors.php">COLORS</a></li>
-                <li><a href="./about.php">ABOUT</a></li>
+                <li><a href="https://cs.colostate.edu:4444/~ewolving/m1/index/company/index">HOME</a></li>
+                <li><a href="https://cs.colostate.edu:4444/~ewolving/m1/index/company/colors">COLORS</a></li>
+                <li><a href="https://cs.colostate.edu:4444/~ewolving/m1/index/company/about">ABOUT</a></li>
                 <li><a href="https://en.wikipedia.org/wiki/Chuckwalla" alt="wikipedia page">CHUCKWALLA INFO</a></li>
             </ol> 
         </nav>
