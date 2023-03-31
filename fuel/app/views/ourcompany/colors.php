@@ -58,6 +58,21 @@
         }
         echo "
             </table";
+        
+        echo "<br><br>";
+
+
+        echo "<table class='square-table'>
+            <caption>Square table below:</caption>";
+        for($x=0; $x <= $_GET['val1']; $x++){
+            echo "<tr>";
+                for($y=0; $y <= $_GET['val1']; $y++){
+                    echo "<td>$x.$x </td>";
+                }
+                
+            echo "</tr>";
+        }
+        echo "</table";
     }
     ?>
     
