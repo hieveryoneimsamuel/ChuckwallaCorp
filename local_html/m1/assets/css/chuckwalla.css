@@ -111,6 +111,15 @@ table.colors caption {
     border: 1px solid;
 }
 
-table.colors th, td {
+table.colors td {
     border: 1px solid;
+    padding: 5px;
+}
+
+table.colors td.col-one {
+    width: 20%;
+}
+
+table.colors td.col-two {
+    width: 80%;
 }
