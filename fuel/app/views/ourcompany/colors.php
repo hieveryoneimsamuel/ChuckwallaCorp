@@ -62,12 +62,20 @@
         echo "<br><br>";
 
 
+        $alphabet = array("A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z");
         echo "<table class='square-table'>
-            <caption>Square table below:</caption>";
-        for($x=0; $x <= $_GET['val1']; $x++){
-            echo "<tr>";
-                for($y=0; $y <= $_GET['val1']; $y++){
-                    echo "<td>$x.$x </td>";
+            <caption>Square table below:</caption>
+            <th>";
+            for($i=0; $i< $_GET['val1']; $i++){
+                echo "<td>$alphabet[$i]</td>";
+            }
+            echo "</th>";
+
+        for($x=0; $x < $_GET['val1']; $x++){
+            echo "<tr>
+                    <td>$x</td>";
+                for($y=0; $y < $_GET['val1']; $y++){
+                    echo "<td>$x,$x </td>";
                 }
                 
             echo "</tr>";
