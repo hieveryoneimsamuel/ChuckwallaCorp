@@ -78,5 +78,16 @@
     
     <br>
     
+    
+    <div class="printview">
+    <?php
+    if(isset($_GET["val1"])&&isset($_GET["val2"])){
+        $val1=$_GET["val1"];
+        $val2=$_GET["val2"];
+    echo "<a href= \"./print?val1=$val1&val2=$val2&numColsButton=\">Print View</a>";
+    }
+    ?>
+    </div>
+    
 
 </body>
