@@ -15,15 +15,15 @@
 <body>
     <header>
         <h1 id="header-content"> Chuckwalla <span style='color: #F19149;'>Corp</span></h1>
-        <img src="https://cs.colostate.edu:4444/~ewolving/m1/assets/img/ChuckwallaCorp.png" alt="Chuckwalla Logo">
+        <img src="https://cs.colostate.edu:4444/~cburke10/m1/assets/img/ChuckwallaCorp.png" alt="Chuckwalla Logo">
     </header>
 
     <div class="links">
         <nav>
             <ol>
-                <li><a href="https://cs.colostate.edu:4444/~ewolving/m1/index/company/index">HOME</a></li>
-                <li><a href="https://cs.colostate.edu:4444/~ewolving/m1/index/company/colors.php">COLORS</a></li>
-                <li><a href="https://cs.colostate.edu:4444/~ewolving/m1/index/company/about.php">ABOUT</a></li>
+                <li><a href="./index">HOME</a></li>
+                <li><a href="./colors.php">COLORS</a></li>
+                <li><a href="./about.php">ABOUT</a></li>
                 <li><a href="https://en.wikipedia.org/wiki/Chuckwalla" alt="wikipedia page">CHUCKWALLA INFO</a></li>
             </ol> 
         </nav>
