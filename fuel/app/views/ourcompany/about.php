@@ -10,6 +10,8 @@
     <div class="about-div">
         <div id="about-person">
             <h3>Samuel Chamberlain</h3>
+            <img src = "https://cs.colostate.edu:4444/~stchambe/m1/assets/img/rare_photo_of_samuel.png" alt="Samuel Chamberlain">
+            <p>In Samuel's free time he likes to count money and ride jetskis made of solid gold.</p>
         </div>
         <div id="about-person">
             <h3>Elena Wolvington</h3>
