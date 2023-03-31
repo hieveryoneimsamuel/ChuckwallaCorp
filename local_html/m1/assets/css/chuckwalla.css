@@ -123,3 +123,13 @@ table.colors td.col-one {
 table.colors td.col-two {
     width: 80%;
 }
+
+table.square-table {
+    width: 90%;
+    border-collapse: collapse;
+}
+
+table.square-table td {
+    border: 1px solid;
+    padding: 5px;
+}
