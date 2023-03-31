@@ -34,24 +34,21 @@
 
         
 
-        echo "<table class='colors' >
+         echo "<table class='colors' >
                 <caption>Colors:</caption>";
 
+        $namesColors = array("RED", "ORANGE", "YELLOW", "GREEN", "BLUE", "PURPLE", "GREY", "BROWN", "BLACK", "TEAL");
         for($x=0; $x < $_GET['val2']; $x++){
             echo "<tr>
                 <td class='col-one'>
-                    <select name='colorchoice'>
-                        <option value='red'>Red</option>
-                        <option value='orange'>Orange</option>
-                        <option value='yellow'>Yellow</option>
-                        <option value='green'>Green</option>
-                        <option value='blue'>Blue</option>
-                        <option value='purple'>Purple</option>
-                        <option value='grey'>Grey</option>
-                        <option value='brown'>Brown</option>
-                        <option value='black'>Black</option>
-                        <option value='teal'>Teal</option>
-                    </select>
+                    <select name='colorchoice'>";
+                        for($i=0; $i < $_GET['val2']; $i++){
+                            
+                            echo "<option value='$namesColors[$i]'> $namesColors[$i] </option>";
+                            
+                        }
+                
+                    echo "</select>
                 </td>
                 <td class='col-two'>COL2</td>";
                 
