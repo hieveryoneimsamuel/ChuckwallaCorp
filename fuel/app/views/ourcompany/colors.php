@@ -41,12 +41,16 @@
         for($x=0; $x < $_GET['val2']; $x++){
             echo "<tr>
                 <td class='col-one'>
-                    <select name='colorchoice'>";
-                        for($i=0; $i < $_GET['val2']; $i++){
-                            
+                    <select id='row$namesColors[$x]'>";
+                        for($i=0; $i <10; $i++){
+                            if($i==$x){
+                                echo "<option value='$namesColors[$i]' selected> $namesColors[$i] </option>";
+                                continue;
+                            }
                             echo "<option value='$namesColors[$i]'> $namesColors[$i] </option>";
                             
                         }
+
                 
                     echo "</select>
                 </td>
