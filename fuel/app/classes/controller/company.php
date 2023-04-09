@@ -11,6 +11,7 @@ class Controller_company extends Controller_Template
 		$this->template->title = "Welcome";
 		$this->template->content= View::forge('ourcompany/welcome.php', $data);
 		$this->template->css = "chuckwalla.css";
+		$this->template->js = "default.js";
 
 	}
 
@@ -19,6 +20,7 @@ class Controller_company extends Controller_Template
 		$this->template->title = "About";
 		$this->template->content = View::forge('ourcompany/about.php'); 
 		$this->template->css = "chuckwalla.css";
+		$this->template->js = "default.js";
 
 	}
 
@@ -36,6 +38,7 @@ class Controller_company extends Controller_Template
 		$this->template->title = "Print View";
 		$this->template->content = View::forge('ourcompany/colors.php'); 
 		$this->template->css = "printview.css";
+		$this->template->js = "default.js";
 
 	}
 
