@@ -27,6 +27,7 @@ class Controller_company extends Controller_Template
 		$this->template->title = "Colors";
 		$this->template->content = View::forge('ourcompany/colors.php'); 
 		$this->template->css = "chuckwalla.css";
+		$this->template->js = "chuckwalla.js";
 
 	}
 	
