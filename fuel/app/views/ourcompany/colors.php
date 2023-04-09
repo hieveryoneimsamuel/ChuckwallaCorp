@@ -41,7 +41,7 @@
         for($x=0; $x < $_GET['val2']; $x++){
             echo "<tr>
                 <td class='col-one'>
-                    <select id='row$namesColors[$x]'>";
+                    <select id='row$namesColors[$x]' class='mySelectElements'>";
                         for($i=0; $i <10; $i++){
                             if($i==$x){
                                 echo "<option value='$namesColors[$i]' selected> $namesColors[$i] </option>";
