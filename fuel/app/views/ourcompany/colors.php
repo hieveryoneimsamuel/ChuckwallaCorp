@@ -93,7 +93,7 @@
     if(isset($_GET["val1"])&&isset($_GET["val2"])){
         $val1=$_GET["val1"];
         $val2=$_GET["val2"];
-     echo "<button onclick=\"location.href='./print?val1=$val1&val2=$val2&numColsButton=';\">Print View</button>";
+     echo "<button onclick=\"location.href='./colors?val1=$val1&val2=$val2&numColsButton=&print=true';\">Print View</button>";
     }
     ?>
     </div>
