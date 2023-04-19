@@ -53,3 +53,42 @@ function checkForDuplicates(idName){
         }
     });
 }
+
+function generatePrintview(){
+    const urlString = window.location.search;
+    const parameters = new URLSearchParams(urlString);
+    const numRows = parameters.get("val2");
+    const othersVals = document.getElementsByClassName('mySelectElements');
+
+    const printTable = document.createElement("table");
+    printTable.setAttribute("class", "printColors");
+
+    for(let i = 0; i<numRows; i++){
+        const currRow = document.createElement("tr");
+        currRow.setAttribute("id", "row " + i);
+        for(let j = 0; j<2; j++){
+            const currCell = document.createElement("td");
+            if(j == 0){
+                currCell.setAttribute("id", "col-one");
+                currCell.innerText = othersVals[i].value;
+            }
+            else{
+                currCell.setAttribute("id", "col-two");
+                currCell.innerText = "COL2";
+            }
+            
+            currRow.appendChild(currCell);
+        }
+        printTable.appendChild(currRow);
+    }
+
+    const printDiv = document.getElementById("printview");
+    printDiv.appendChild(printTable);
+
+    //necessary to enact new CSS without refreshing the page (aka without altering user dropdown selections)
+
+    const newCSS = document.createElement("link");
+    newCSS.setAttribute('rel', 'stylesheet');
+    newCSS.setAttribute('href', 'https://cs.colostate.edu:4444/~ewolving/m1/assets/css/printview.css');
+    document.head.appendChild(newCSS);
+}    

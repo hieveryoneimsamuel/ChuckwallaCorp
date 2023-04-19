@@ -31,9 +31,6 @@ class Controller_company extends Controller_Template
 		$this->template->css = "chuckwalla.css";
 		$this->template->js = "chuckwalla.js";
 		
-		if(isset($_GET['print'])){
-			$this->template->css = "printview.css";
-		}
 	}
 	
 
