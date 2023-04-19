@@ -3,6 +3,8 @@ body {
     width: 1000px;
     margin-left: auto;
     margin-right: auto;
+    filter: grayscale(100%);
+    background-color: white;
 }
 
 header {
@@ -11,6 +13,8 @@ header {
     padding: 15px;
     font-family: 'Merriweather', serif;
     filter: grayscale(100%);
+    border:none;
+    background-color: white;
 }
 
 header #header-content {
@@ -28,7 +32,7 @@ header img {
     filter: grayscale(100%);
 }
 
-table.colors {
+table.printColors {
     visibility: visible;
     position: absolute;
     top: 200px;
@@ -46,20 +50,20 @@ table.square-table {
 }
 
 
-table.colors caption {
+table.printColors caption {
     border: 1px solid;
 }
 
-table.colors td {
+table.printColors td {
     border: 1px solid;
     padding: 5px;
 }
 
-table.colors td.col-one {
+table.printColors td.col-one {
     width: 20%;
 }
 
-table.colors td.col-two {
+table.printColors td.col-two {
     width: 80%;
 }
 
