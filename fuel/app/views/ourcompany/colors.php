@@ -88,7 +88,7 @@
     <br>
     
     
-    <div class="printview">
+    <div id="printview">
     <?php
     if(isset($_GET["val1"])&&isset($_GET["val2"])){
         echo "<button onclick=\"generatePrintview()\">Print View</button>";
