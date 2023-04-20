@@ -78,24 +78,25 @@ footer {
 
 div.about-div {
     display: flex;
+    justify-content: center;
 }
 
-div #about-person h3 {
+.about-person h3 {
     text-align: center;
     text-transform: uppercase;
 }
 
-div #about-person {
-    width: 33%;
-    margin: 10px;
+.about-person {
+    width: 300px;
+    margin: 5px;
     border: 2px solid #F19149;
     text-align: justify;
     padding: 10px;
     background-color: white;
 }
 
-div #about-person img {
-    width: 250px;
+.about-person img {
+    width: 225px;
     display: block;
     margin-right: auto;
     margin-left: auto;
