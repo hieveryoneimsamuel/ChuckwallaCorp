@@ -39,8 +39,9 @@
         </div>
         <div class="about-person">
             <h3>Alex Glimco</h3>
-            <img src = "" alt="Alex Glimco Profile Pic">
-            <p></p>
+            <img src = "https://cs.colostate.edu:4444/~alexpcg/m1/assets/img/AlexGlimcoPicture.jpg" alt="Alex Glimco Profile Pic">
+            <p>Alex is a senior at Colorado State University and wishes to use his degree, education, and skills to better himself as he grows in
+                the industry and ultimately aims to work for a forward-thinking company that values the environment, innovation, and human equality.</p>
         </div>
     </div>
 </body>
