@@ -69,11 +69,11 @@ function generatePrintview(){
         for(let j = 0; j<2; j++){
             const currCell = document.createElement("td");
             if(j == 0){
-                currCell.setAttribute("id", "col-one");
+                currCell.setAttribute("class", "col-one");
                 currCell.innerText = othersVals[i].value;
             }
             else{
-                currCell.setAttribute("id", "col-two");
+                currCell.setAttribute("class", "col-two");
                 currCell.innerText = "COL2";
             }
             
