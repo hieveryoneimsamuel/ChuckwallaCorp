@@ -3,7 +3,7 @@
         <?php echo $title ?>
     </title>
     <meta charset="UTF-8">
-    <meta name="author" content="Samuel Chamberlain, Elena Wolvington, Chloe Burke">
+    <meta name="author" content="Samuel Chamberlain, Elena Wolvington, Chloe Burke, Alex Glimco, Cassidy Roberts">
     <meta name="description" content="Chuckwalla Corp M1">
     <!-- <?php echo Asset::css($css) ?> putting this here has no effect -->
     <?php echo Asset::css($css) ?>
@@ -37,6 +37,6 @@
     </main>
 
     <footer>
-        <p>Chuckwalla Corporation. 2023</p>   
+        <p>&copy; Chuckwalla Corporation, 2023</p>   
     </footer>
 </body>

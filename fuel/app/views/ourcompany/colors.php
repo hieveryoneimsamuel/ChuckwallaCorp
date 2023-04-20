@@ -3,12 +3,12 @@
 
     
     <form method='GET'> 
-        <p>Ask for num rows/cols here:</p>
-        <input type="number" class="val" name="val1">
+        <p>Enter number of Rows/Columns:</p>
+        <input type="number" class="val" name="val1" min=1 max=26 required>
         
 
-        <p>Ask for num of colors here:</p>
-        <input type="number" class="val" name="val2">
+        <p>Enter Number of Colors:</p>
+        <input type="number" class="val" name="val2" min=1 max=10 required>
         <br>
         <button type="submit" name="numColsButton" id="btn-numColors"> Enter </button>
     </form> 
