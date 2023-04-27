@@ -71,7 +71,7 @@
         echo "<tr>
                 <td>$x</td>";
             for($y=0; $y < $_GET['val1']; $y++){
-                echo "<td>$x,$x </td>";
+                echo "<td>$alphabet[$y]$x </td>";
             }
             
         echo "</tr>";
