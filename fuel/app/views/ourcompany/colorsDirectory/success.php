@@ -31,6 +31,7 @@
     for($x=0; $x < $_GET['val2']; $x++){
         echo "<tr>
             <td class='col-one'>
+            <input type='radio' name='current_color' value='$namesColors[$x]' ".($x==0?"checked":"").">
                 <select id='row$namesColors[$x]' class='mySelectElements'>";
                     for($i=0; $i <10; $i++){
                         if($i==$x){
@@ -40,11 +41,14 @@
                         echo "<option value='$namesColors[$i]'> $namesColors[$i] </option>";
                         
                     }
+                    
 
             
                 echo "</select>
             </td>
-            <td class='col-two'>COL2</td>";
+            <td class='col-two'>
+                
+            </td>";
             echo "</tr>";
             
     }
@@ -91,5 +95,3 @@
     
 
 </body>
-
-
