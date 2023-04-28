@@ -1,15 +1,9 @@
-<body>
-    
-
-    <h1>ChuckwallaCorp Colors page</h1>
-
-    
+<body>    
     <form method='GET'> 
-        <p>FRESH START:<br></p>
-        <p>Ask for num rows/cols here:</p>
+        <p>Insert number of rows/cols here (minimum: 1, maximum: 26):</p>
         <input type="number" class="val" name="val1">
         <br>
-        <p>Ask for num of colors here:</p>
+        <p>Insert number of colors here (minimum: 1):</p>
         <input type="number" class="val" name="val2">
         
         <br>
@@ -34,12 +28,5 @@
         }
         echo "<p>Number of colors: </p>" . $_GET["val2"] . "<br>";
     }
-
     ?>
-
-    
-    
-
 </body>
-
-
