@@ -102,6 +102,13 @@ div.about-div {
     margin-left: auto;
 }
 
+#invalid {
+    background-color: #F19149;
+    width: 13%;
+    padding: 2px;
+    text-transform: uppercase;
+}
+
 table.colors {
     border: 1px solid;
     border-collapse: collapse;
