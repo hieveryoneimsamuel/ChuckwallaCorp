@@ -27,9 +27,11 @@
             <td class='col-one'>
             <input type='radio' name='current_color' value='$namesColors[$x]' ".($x==0?"checked":"").">
                 <select id='row$namesColors[$x]' class='mySelectElements'>";
+                    $currentColor;
                     for($i=0; $i <10; $i++){
                         if($i==$x){
                             echo "<option value='$namesColors[$i]' selected> $namesColors[$i] </option>";
+                            $currentColor = $namesColors[$i];
                             continue;
                         }
                         echo "<option value='$namesColors[$i]'> $namesColors[$i] </option>";
@@ -40,7 +42,8 @@
             
                 echo "</select>
             </td>
-            <td class='col-two'>
+            <td class='col-two $currentColor'>
+
                 
             </td>";
             echo "</tr>";
@@ -54,7 +57,7 @@
 
     $alphabet = array("A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z");
     echo "<table class='square-table'>
-        <caption>Square table below:</caption>
+        <br><br>
         <th>";
         for($i=0; $i< $_GET['val1']; $i++){
             echo "<td>$alphabet[$i]</td>";
