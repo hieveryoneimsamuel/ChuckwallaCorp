@@ -1,15 +1,9 @@
 <body>
-    
-
-    <h1>ChuckwallaCorp Colors page</h1>
-
-    
     <form method='GET'> 
-        <p>Ask for num rows/cols here:</p>
+    <p>Insert number of rows/cols here (minimum: 1, maximum: 26):</p>
         <input type="number" class="val" name="val1">
-        
-
-        <p>Ask for num of colors here:</p>
+        <br>
+        <p>Insert number of colors here (minimum: 1):</p>
         <input type="number" class="val" name="val2">
         
         <br>
@@ -92,6 +86,4 @@
     }
     ?>
     </div>
-    
-
 </body>
