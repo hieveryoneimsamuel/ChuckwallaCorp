@@ -1,10 +1,10 @@
 <body>
     <form method='GET'> 
     <p>Insert number of rows/cols here (minimum: 1, maximum: 26):</p>
-        <input type="number" class="val" name="val1">
+        <input type="number" class="val" name="val1" min=1 max=26 required>
         <br>
         <p>Insert number of colors here (minimum: 1):</p>
-        <input type="number" class="val" name="val2">
+        <input type="number" class="val" name="val2" min=1 max=10 required>
         
         <br>
         <button type="submit" name="numColsButton" id="btn-numColors"> Enter </button>
