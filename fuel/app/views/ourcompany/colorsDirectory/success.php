@@ -38,7 +38,7 @@
             <input type='radio' name='current_color' value='$namesColors[$x]' ".($x==0?"checked":"").">
                 <select id='row$namesColors[$x]' class='mySelectElements'>";
                     $currentColor;
-                    for($i=0; $i <10; $i++){
+                    for($i=0; $i < $colorcount; $i++){
                         if($i==$x){
                             echo "<option value='$namesColors[$i]' selected> $namesColors[$i] </option>";
                             $currentColor = $namesColors[$i];
