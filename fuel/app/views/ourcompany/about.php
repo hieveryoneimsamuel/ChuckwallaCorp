@@ -34,8 +34,10 @@
     <div class="about-div">
         <div class="about-person">
             <h3>Cassidy Roberts</h3>
-            <img src = "" alt="Cassidy Roberts Profile Pic">
-            <p></p>
+            <img src = "https://cs.colostate.edu:4444/~cassiero/m1/assets/img/CassidyPicture.jpg" alt="Cassidy Roberts Profile Pic">
+            <p>Cassidy is a sophomore at Colorado State University pursuing a Computer Science degree with a minor in Music, Stage, and Sports Production. She aims to 
+                learn and develop her skills as a programmer so she can eventually make contributions to the medical field with advanced AI systems.
+            </p>
         </div>
         <div class="about-person">
             <h3>Alex Glimco</h3>
