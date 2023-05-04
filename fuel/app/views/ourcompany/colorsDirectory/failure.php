@@ -1,13 +1,13 @@
 <body>    
     <form method='GET'> 
-        <p id="invalid"><strong>Invalid input!</strong></p>
+        <p id="invalid"><strong>Invalid Input!</strong></p>
         
-        <p>Insert number of rows/cols here (minimum: 1, maximum: 26): </p>
-        <input type="number" class="val" name="val1">
+        <<p>Enter Number of Rows/Columns:</p>
+        <input type="number" placeholder="# 1-26" class="val" name="val1" min=1 max=26 required>
         
 
-        <p>Insert number of colors here (minimum: 1):</p>
-        <input type="number" class="val" name="val2">
+        <p>Enter Number of Colors:</p>
+        <input type="number" placeholder="# 1-X" class="val" name="val2" min=1 required>
         
         <br>
         <button type="submit" name="numColsButton" id="btn-numColors"> Enter </button>
@@ -23,7 +23,7 @@
     }
 
     if(isset($_GET['val1']) && !isset($_GET['val2'])){
-        echo "<p>Looks like num of colors isn't set. Please try again.</p>";
+        echo "<p>Looks like the number of colors isn't set. Please try again.</p>";
     }
 
 

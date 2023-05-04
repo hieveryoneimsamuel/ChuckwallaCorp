@@ -2,7 +2,7 @@
 <p>This is the Color Database App</p>
 <br><br>
 <p>The following colors are already in the 'customcolors' database:</p>
-<p>(Add or delete as you like)</p>
+<p>(Add or Delete as you like)</p>
 <br>
 
 <form method="POST">
@@ -18,21 +18,20 @@ foreach($colorchoices as $somecolor){
 ?>
 
     <br>
-    <input type='submit' value='Delete selected color(s)' name='delete'>
+    <input type='submit' value='Delete Selected Color(s)' name='delete'>
 </form>
 
 <form method="POST">
-    <span>Color name: </span>
+    <span>Color Name: </span>
     <input type="text" name="color-text" required></input>
-    <span>Color hex value: </span>
+    <span>Color Hex Value: </span>
     <input type="text" name="color-hex" required></input>
-    <input type="submit" value="Add new color" name='add'></input>
+    <input type="submit" value="Add New Color" name='add'></input>
 </form>
 
 
 <br><br>
 <form method="POST">
     
-    <button type="submit" name="finishedbutton" id="finished-button">Click for the next step</button>
+    <button type="submit" name="finishedbutton" id="finished-button">Next Step</button>
 </form>
-
