@@ -4,7 +4,7 @@
         <input type="number" class="val" name="val1" min=1 max=26 required>
         <br>
         <p>Insert number of colors here (minimum: 1):</p>
-        <input type="number" class="val" name="val2" min=1 max=10 required>
+        <input type="number" class="val" name="val2" min=1 required>
         
         <br>
         <button type="submit" name="numColsButton" id="btn-numColors"> Enter </button>
@@ -16,12 +16,22 @@
     echo "<p>Number of rows/cols: </p>" . $_GET["val1"]. "<br>";
 
     echo "<p>Number of colors: </p>" . $_GET["val2"] . "<br>";
-
+    ?>
     
+    <form method = "POST">  
+        
+        <input type="submit" value="Click to add/delete colors" name = 'revisitdb'> </input>
+    </form>
+
+    <?php
     echo "<table class='colors' >
             <caption>Colors:</caption>";
 
-    $namesColors = array("RED", "ORANGE", "YELLOW", "GREEN", "BLUE", "PURPLE", "GREY", "BROWN", "BLACK", "TEAL");
+    //$namesColors = array("RED", "ORANGE", "YELLOW", "GREEN", "BLUE", "PURPLE", "GREY", "BROWN", "BLACK", "TEAL");
+    $namesColors = array();
+    foreach($colorchoices as $somecolor){
+        array_push($namesColors, $somecolor['text']);   
+    }
     for($x=0; $x < $_GET['val2']; $x++){
         echo "<tr>
             <td class='col-one'>
