@@ -1,11 +1,16 @@
-<body>    
+<body>
+    
+
+    <h1>ChuckwallaCorp Colors page</h1>
+
+    
     <form method='GET'> 
-        <p>Insert number of rows/cols here (minimum: 1, maximum: 26):</p>
-        <input type="number" class="val" name="val1" min=1 max=26 required>
+        <p>To generate a color table, please enter the following:<br></p>
+        <p>Number of rows/cols:  <input type="number" class="val" name="val1" min=1 max=26> </p
         <br>
-        <p>Insert number of colors here (minimum: 1):</p>
-        <input type="number" class="val" name="val2" min=1 max=10 required>
-        
+        <p>Number of colors: <input type="number" class="val" name="val2">
+        <?php echo "<p>Size of colors database: " . $colorcount . " (Please enter a integer less than or equal to it)</p>"; ?>
+        </p>
         <br>
         <button type="submit" name="numColsButton" id="btn-numColors"> Enter </button>
     </form> 
@@ -28,5 +33,12 @@
         }
         echo "<p>Number of colors: </p>" . $_GET["val2"] . "<br>";
     }
+
     ?>
+
+    
+    
+
 </body>
+
+
