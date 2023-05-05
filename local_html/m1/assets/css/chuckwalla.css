@@ -109,6 +109,13 @@ div.about-div {
     text-transform: uppercase;
 }
 
+#success {
+    background-color: #79f149;
+    width: 9%;
+    padding: 2px;
+    text-transform: uppercase;
+}
+
 table.colors {
     border: 1px solid;
     border-collapse: collapse;

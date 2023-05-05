@@ -11,12 +11,12 @@
     <div class="about-div">
         <div class="about-person">
             <h3>Samuel Chamberlain</h3>
-            <img src = "https://cs.colostate.edu:4444/~cburke10/m1/assets/img/rare_photo_of_samuel.png" alt="Samuel Chamberlain Profile Pic">
+            <img src = "https://cs.colostate.edu:4444/~cburke10/m2/assets/img/rare_photo_of_samuel.png" alt="Samuel Chamberlain Profile Pic">
             <p>In Samuel's free time he likes to count money and ride jetskis made of solid gold.</p>
         </div>
         <div class="about-person">
             <h3>Elena Wolvington</h3>
-            <img src = https://cs.colostate.edu:4444/~cburke10/m1/assets/img/ElenaProfilePic.jpg alt="Elena Wolvington Profile Pic">
+            <img src = https://cs.colostate.edu:4444/~cburke10/m2/assets/img/ElenaProfilePic.jpg alt="Elena Wolvington Profile Pic">
             <p>Elena is a senior at CSU working towards a Biology major and Computer Science minor. She is passionate about
                  all things living, and grows a wide variety of plants as a hobby in her free time. Her proudest accomplishment has been getting
                   a pumpkin plant to flower in a pot on her windowsill -
@@ -24,7 +24,7 @@
         </div>
         <div class="about-person">
             <h3>Chloe Burke</h3>
-            <img src=https://cs.colostate.edu:4444/~cburke10/m1/assets/img/ChloeProfile.jpg alt="Chloe Burke Profile Pic">
+            <img src=https://cs.colostate.edu:4444/~cburke10/m2/assets/img/ChloeProfile.jpg alt="Chloe Burke Profile Pic">
             <p>Chloe is a senior at Colorado State University with a Computer Science major. She has experience with a 
                 variety of programming languages, such as C/C++, Java, JavaScript, HTML, CSS, PHP, and Python.</p>
             <p>Chloe enjoys drawing and painting. She designed the Chuckwalla Corp logo. She is also a reptile owner, with
@@ -34,14 +34,14 @@
     <div class="about-div">
         <div class="about-person">
             <h3>Cassidy Roberts</h3>
-            <img src = "https://cs.colostate.edu:4444/~cassiero/m1/assets/img/CassidyPicture.jpg" alt="Cassidy Roberts Profile Pic">
+            <img src = "https://cs.colostate.edu:4444/~cassiero/m2/assets/img/CassidyPicture.jpg" alt="Cassidy Roberts Profile Pic">
             <p>Cassidy is a sophomore at Colorado State University pursuing a Computer Science degree with a minor in Music, Stage, and Sports Production. She aims to 
                 learn and develop her skills as a programmer so she can eventually make contributions to the medical field with advanced AI systems.
             </p>
         </div>
         <div class="about-person">
             <h3>Alex Glimco</h3>
-            <img src = "https://cs.colostate.edu:4444/~alexpcg/m1/assets/img/AlexGlimcoPicture.jpg" alt="Alex Glimco Profile Pic">
+            <img src = "https://cs.colostate.edu:4444/~alexpcg/m2/assets/img/AlexGlimcoPicture.jpg" alt="Alex Glimco Profile Pic">
             <p>Alex is a senior at Colorado State University and wishes to use his degree, education, and skills to better himself as he grows in
                 the industry and ultimately aims to work for a forward-thinking company that values the environment, innovation, and human equality.</p>
         </div>
