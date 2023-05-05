@@ -1,29 +1,28 @@
 <body>
     <form method='GET'> 
-    <p>Insert number of rows/cols here (minimum: 1, maximum: 26):</p>
-        <input type="number" class="val" name="val1">
-        <br>
-        <p>Insert number of colors here (minimum: 1):</p>
-        <input type="number" class="val" name="val2">
+    <p id="success"><strong>SUCCESS!</strong></p>
+    
+    <p>Enter Number of Rows/Columns:</p>
+    <input type="number" placeholder="# 1-26" class="val" name="val1" min=1 max=26 required>
+    <br>
+    <p>Enter Number of Colors:</p>
+    <input type="number" placeholder="# 1-<?php echo "".$colorcount."" ?>" class="val" name="val2" min=1 required>
         
-        <br>
-        <button type="submit" name="numColsButton" id="btn-numColors"> Enter </button>
+    <br><br>
+    <button type="submit" name="numColsButton" id="btn-numColors"> Enter </button>
     </form> 
 
     
 
     <?php
+    echo "<p>Number of Rows/Columns: </p>" . $_GET["val1"]. "<br>";
 
-    echo "<p>SUCCESS!<br></p>";
-    echo "<p>Number of rows/cols: </p>" . $_GET["val1"]. "<br>";
-
-    echo "<p>Number of colors: </p>" . $_GET["val2"] . "<br><br>";
+    echo "<p>Number of Colors: </p>" . $_GET["val2"] . "<br><br>";
     ?>
 
 
     <form method = "POST">  
-        
-        <input type="submit" value="Click to add/delete colors" name = 'revisitdb'> </input>
+        <input type="submit" value="Click to Add/Delete Colors" name = 'revisitdb'> </input>
     </form>
 
     <?php
@@ -35,12 +34,9 @@
     $namesColors = array();
     $hexValsColors = array();
     foreach($colorchoices as $somecolor){
-        array_push($namesColors, $somecolor['text']);   
+        array_push($namesColors, $somecolor['text']);
         array_push($hexValsColors, $somecolor['hv']);
     }
-
-   
-
 
     for($x=0; $x < $_GET['val2']; $x++){
         echo "<tr>
@@ -98,10 +94,8 @@
     
     ?>
     
-    <br>
+    <br><br>
     
-    
-   
 
     <div id="printview">
     <?php
