@@ -12,7 +12,12 @@ window.onload = function(){
             checkForDuplicates(rowsUnderConsideration[i]);
         }
         
-        
+        for(let i = 0; i<numRows; i++){
+            for(let j = 0; j < numColumns; j++){
+                const currentId = "" + alphabet[j] + i;
+                bigTableEventListeners(currentId);
+            }
+        }  
     }   
 
     
@@ -54,6 +59,25 @@ $(document).ready(function(){
 
 function getCurrColor(){
     return currColor;
+}
+
+function bigTableEventListeners(cellId){
+    var currCell = document.getElementById(cellId);
+    currCell.addEventListener('click', ()=>{
+        const radioMenu = document.querySelector('input[name="current_color"]:checked');
+        const selectedRow = radioMenu.parentNode.parentNode;
+      
+       const selectedColTwo = selectedRow.childNodes[3];       
+        /* $("selectedColTwo").html("Test");
+        //Currently not working :( WHY IS IT THREE TO SELECT THE RIGHT TD?
+      */
+
+        const styleAttribute = "background-color: " + radioMenu.value;
+        if(currCell.getAttribute("style") != null){
+            currCell.removeAttribute("style");
+        }
+        else currCell.setAttribute("style", styleAttribute );
+    });
 }
 
 
