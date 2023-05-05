@@ -47,11 +47,11 @@
                     $currentColor;
                     for($i=0; $i < $colorcount; $i++){
                         if($i==$x){
-                            echo "<option value='$namesColors[$i]' selected> $namesColors[$i] $hexValsColors[$i] </option>";
+                            echo "<option value='$hexValsColors[$i]' selected> $namesColors[$i] </option>";
                             $currentColor = $namesColors[$i];
                             continue;
                         }
-                        echo "<option value='$namesColors[$i]'> $namesColors[$i] $hexValsColors[$i] </option>";
+                        echo "<option value='$hexValsColors[$i]'> $namesColors[$i] </option>";
                         
                     }
                     
@@ -81,7 +81,7 @@
         }
         echo "</th>";
 
-    for($x=0; $x < $_GET['val1']; $x++){
+    for($x=0; $x < $_GET['val2']; $x++){
         echo "<tr>
                 <td>$x</td>";
             for($y=0; $y < $_GET['val1']; $y++){
