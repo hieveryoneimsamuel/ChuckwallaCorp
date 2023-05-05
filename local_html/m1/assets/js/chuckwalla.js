@@ -3,6 +3,9 @@ window.onload = function(){
     const urlString = window.location.search;
     const parameters = new URLSearchParams(urlString);
     const numRows = parameters.get("val2");
+    const numColumns = parameters.get("val1");
+    const alphabet = ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z"];
+
 
     if(numRows !== null){
         console.log("numRows is: " + numRows);
