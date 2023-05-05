@@ -40,18 +40,17 @@
 
     for($x=0; $x < $_GET['val2']; $x++){
         echo "<tr>
-
             <td class='col-one'>
-            <input type='radio' name='current_color' value='$namesColors[$x]' ".($x==0?"checked":"").">
-                <select onSelect={()=>{alert('vv')}} id='row$namesColors[$x]' class='mySelectElements'>";
+            <input type='radio' name='current_color' value='$hexValsColors[$x]' ".($x==0?"checked":"").">
+                <select onSelect={()=>{alert('vv')}} id='row$hexValsColors[$x]' class='mySelectElements'>";
                     $currentColor;
                     for($i=0; $i < $colorcount; $i++){
                         if($i==$x){
-                            echo "<option value='$namesColors[$i]' selected> $namesColors[$i] $hexValsColors[$i] </option>";
+                            echo "<option value='$hexValsColors[$i]' selected> $namesColors[$i] </option>";
                             $currentColor = $namesColors[$i];
                             continue;
                         }
-                        echo "<option value='$namesColors[$i]'> $namesColors[$i] $hexValsColors[$i] </option>";
+                        echo "<option value='$hexValsColors[$i]'> $namesColors[$i] </option>";
                         
                     }
                     
@@ -60,7 +59,6 @@
                 echo "</select>
             </td>
             <td class='col-two'>
-
                 
             </td>";
             echo "</tr>";
@@ -81,7 +79,7 @@
         }
         echo "</th>";
 
-    for($x=0; $x < $_GET['val1']; $x++){
+    for($x=0; $x < $_GET['val2']; $x++){
         echo "<tr>
                 <td>$x</td>";
             for($y=0; $y < $_GET['val1']; $y++){

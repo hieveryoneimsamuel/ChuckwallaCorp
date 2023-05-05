@@ -32,13 +32,35 @@ header img {
     filter: grayscale(100%);
 }
 
-table.printColors {
-    visibility: visible;
-    position: absolute;
-    top: 200px;
+
+table.colors {
+    visibility:visible;
+    position:absolute;
+    top:200px;
     border: 1px solid;
     border-collapse: collapse;
-    width: 50%;
+    width: 90%;
+}
+
+table.colors caption {
+    border: 1px solid;
+}
+
+table.colors td {
+    border: 1px solid;
+    padding: 5px;
+}
+
+table.colors td.col-one {
+    width: 20%;
+}
+
+table.colors td.col-two {
+    width: 80%;
+}
+
+table.colors input {
+    visibility:hidden;
 }
 
 table.square-table {
@@ -49,23 +71,6 @@ table.square-table {
     border-collapse: collapse;
 }
 
-
-table.printColors caption {
-    border: 1px solid;
-}
-
-table.printColors td {
-    border: 1px solid;
-    padding: 5px;
-}
-
-table.printColors td.col-one {
-    width: 20%;
-}
-
-table.printColors td.col-two {
-    width: 80%;
-}
 
 table.square-table td {
     border: 1px solid;

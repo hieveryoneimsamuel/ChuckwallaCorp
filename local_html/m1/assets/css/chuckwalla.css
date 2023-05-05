@@ -148,7 +148,3 @@ table.square-table td {
     border: 1px solid;
     padding: 5px;
 }
-
-table.printColors {
-    visibility: hidden;
-}

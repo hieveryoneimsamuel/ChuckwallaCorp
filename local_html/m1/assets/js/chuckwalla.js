@@ -92,40 +92,27 @@ function bigTableEventListeners(cellId){
 }
 
 function generatePrintview(){
+    
     const urlString = window.location.search;
     const parameters = new URLSearchParams(urlString);
     const numRows = parameters.get("val2");
-    const othersVals = document.getElementsByClassName('mySelectElements');
-
-    const printTable = document.createElement("table");
-    printTable.setAttribute("class", "printColors");
+    const numColumns = parameters.get("val1");
+    const alphabet = ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z"];
 
     for(let i = 0; i<numRows; i++){
-        const currRow = document.createElement("tr");
-        currRow.setAttribute("id", "row " + i);
-        for(let j = 0; j<2; j++){
-            const currCell = document.createElement("td");
-            if(j == 0){
-                currCell.setAttribute("class", "col-one");
-                currCell.innerText = othersVals[i].value;
+        for(let j = 0; j<numColumns; j++){
+            var currCell = document.getElementById("" + alphabet[j] + i);
+            if(currCell.getAttribute("style") != null){
+                currCell.removeAttribute("style");
             }
-            else{
-                currCell.setAttribute("class", "col-two");
-                currCell.innerText = "COL2";
-            }
-            
-            currRow.appendChild(currCell);
         }
-        printTable.appendChild(currRow);
     }
-
-    const printDiv = document.getElementById("printview");
-    printDiv.appendChild(printTable);
+    
 
     //necessary to enact new CSS without refreshing the page (aka without altering user dropdown selections)
 
     const newCSS = document.createElement("link");
     newCSS.setAttribute('rel', 'stylesheet');
-    newCSS.setAttribute('href', 'https://cs.colostate.edu:4444/~ewolving/m1/assets/css/printview.css');
+    newCSS.setAttribute('href', 'https://cs.colostate.edu:4444/~ewolving/m2/assets/css/printview.css');
     document.head.appendChild(newCSS);
 }    
