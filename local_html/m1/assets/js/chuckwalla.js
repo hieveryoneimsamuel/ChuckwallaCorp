@@ -19,7 +19,13 @@ window.onload = function(){
                 const currentId = "" + alphabet[j] + i;
                 bigTableEventListeners(currentId);
             }
-        }      
+        } 
+        
+        for(let i= 0; i<numRows; i++){
+            var name = "clickedCells" + i;
+            name = [];
+
+        }
         
     }   
 
@@ -69,11 +75,14 @@ function bigTableEventListeners(cellId){
         const radioMenu = document.querySelector('input[name="current_color"]:checked');
         const selectedRow = radioMenu.parentNode.parentNode;
       
-      /* const selectedColTwo = selectedRow.childNodes[3];       
-        $("selectedColTwo").html("Test");
-        //Currently not working :( WHY IS IT THREE TO SELECT THE RIGHT TD
-      */
-        console.log(radioMenu.value);
+       const selectedColTwo = selectedRow.childNodes[3];    
+       
+       var colText = document.createElement("text");
+       colText.innerText = cellId + ", ";   
+
+        $(selectedColTwo).append(colText); //put array in this line
+        
+
         const styleAttribute = "background-color : " + radioMenu.value;
         if(currCell.getAttribute("style") != null){
             currCell.removeAttribute("style");
