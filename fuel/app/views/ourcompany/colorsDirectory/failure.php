@@ -1,14 +1,19 @@
-<body>    
+<body>
+    
+
+    <h1>ChuckwallaCorp Colors page</h1>
+
+    
     <form method='GET'> 
-        <p id="invalid"><strong>Invalid Input!</strong></p>
-        
-        <<p>Enter Number of Rows/Columns:</p>
-        <input type="number" placeholder="# 1-26" class="val" name="val1" min=1 max=26 required>
+        <p><em>Whoops! Bad input that time - Let's try this again shall we...</em><br></p>
+        <p style="text-decoration: line-through">Ask for num rows/cols here: </p>
+        <p style='color: red; text-decoration: underline;'><b><em>Ok, no more playing around, just enter a number of rows/columns between 1-26 here:</em></b></p>
+        <input type="number" class="val" name="val1">
         
 
-        <p>Enter Number of Colors:</p>
-        
-        <input type="number" placeholder="# 1-<?php echo "".$colorcount."" ?>" class="val" name="val2" min=1 required>
+        <p style="text-decoration: line-through">Ask for num of colors here:</p>
+        <p style='color: red; text-decoration: underline;'><b><em>Ok, no more playing around, just enter a number of colors between 1-10 here:</em></b></p>
+        <input type="number" class="val" name="val2">
         
         <br>
         <button type="submit" name="numColsButton" id="btn-numColors"> Enter </button>
@@ -24,12 +29,20 @@
     }
 
     if(isset($_GET['val1']) && !isset($_GET['val2'])){
-        echo "<p>Looks like the number of colors isn't set. Please try again.</p>";
+        echo "<p>Looks like num of colors isn't set. Please try again.</p>";
     }
 
 
     if(!isset($_GET['val1']) && isset($_GET["val2"])){
         echo "<p>Looks like number of rows/columns isn't set. Please try agian.</p>";
-    } 
+    }
+
+        
+    
     ?>
+   
+    
+
+    
+
 </body>
