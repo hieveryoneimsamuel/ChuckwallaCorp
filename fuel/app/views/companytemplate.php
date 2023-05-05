@@ -5,12 +5,15 @@
     <meta charset="UTF-8">
     <meta name="author" content="Samuel Chamberlain, Elena Wolvington, Chloe Burke, Alex Glimco, Cassidy Roberts">
     <meta name="description" content="Chuckwalla Corp M1">
-    <!-- <?php echo Asset::css($css) ?> putting this here has no effect -->
-    <?php echo Asset::css($css) ?>
-    <?php echo Asset::js($js) ?>
+    
+    
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,400;0,700;1,400&family=Rubik:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- <?php echo Asset::css($css) ?> putting this here has no effect -->
+    <?php echo Asset::css($css) ?>
+    <?php echo Asset::js($js) ?>
 </head>
 
 <body>
@@ -22,9 +25,9 @@
     <div class="links">
         <nav>
             <ol>
-                <li><a href="https://cs.colostate.edu:4444/~ewolving/m1/index/company/index">HOME</a></li>
-                <li><a href="https://cs.colostate.edu:4444/~ewolving/m1/index/company/colors">COLORS</a></li>
-                <li><a href="https://cs.colostate.edu:4444/~ewolving/m1/index/company/about">ABOUT</a></li>
+                <li><a href="https://cs.colostate.edu:4444/~stchambe/m1/index/company/index">HOME</a></li>
+                <li><a href="https://cs.colostate.edu:4444/~stchambe/m1/index/company/colors">COLORS</a></li>
+                <li><a href="https://cs.colostate.edu:4444/~stchambe/m1/index/company/about">ABOUT</a></li>
                 <li><a href="https://en.wikipedia.org/wiki/Chuckwalla" alt="wikipedia page">CHUCKWALLA INFO</a></li>
             </ol> 
         </nav>
