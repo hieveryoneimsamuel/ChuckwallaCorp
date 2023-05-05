@@ -40,10 +40,9 @@
 
     for($x=0; $x < $_GET['val2']; $x++){
         echo "<tr>
-
             <td class='col-one'>
-            <input type='radio' name='current_color' value='$namesColors[$x]' ".($x==0?"checked":"").">
-                <select onSelect={()=>{alert('vv')}} id='row$namesColors[$x]' class='mySelectElements'>";
+            <input type='radio' name='current_color' value='$hexValsColors[$x]' ".($x==0?"checked":"").">
+                <select onSelect={()=>{alert('vv')}} id='row$hexValsColors[$x]' class='mySelectElements'>";
                     $currentColor;
                     for($i=0; $i < $colorcount; $i++){
                         if($i==$x){
@@ -60,7 +59,6 @@
                 echo "</select>
             </td>
             <td class='col-two'>
-
                 
             </td>";
             echo "</tr>";
