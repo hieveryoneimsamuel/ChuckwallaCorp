@@ -79,7 +79,7 @@
         }
         echo "</th>";
 
-    for($x=0; $x < $_GET['val2']; $x++){
+    for($x=0; $x < $_GET['val1']; $x++){
         echo "<tr>
                 <td>$x</td>";
             for($y=0; $y < $_GET['val1']; $y++){
