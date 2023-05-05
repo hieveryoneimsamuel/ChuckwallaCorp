@@ -1,8 +1,5 @@
-<h3>Welcome to the Colors Page!</h3>
-<p>This is the Color Database App</p>
-<br><br>
-<p>The following colors are already in the 'customcolors' database:</p>
-<p>(Add or Delete as you like)</p>
+<h3>Color Database Application</h3>
+<p>The following colors are already in your 'customcolors' database:</p>
 <br>
 
 <form method="POST">
@@ -32,6 +29,5 @@ foreach($colorchoices as $somecolor){
 
 <br><br>
 <form method="POST">
-    
     <button type="submit" name="finishedbutton" id="finished-button">Next Step</button>
 </form>
