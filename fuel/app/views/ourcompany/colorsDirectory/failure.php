@@ -2,7 +2,7 @@
     <form method='GET'> 
         <p id="invalid"><strong>Invalid Input!</strong></p>
         
-        <<p>Enter Number of Rows/Columns:</p>
+        <p>Enter Number of Rows/Columns:</p>
         <input type="number" placeholder="# 1-26" class="val" name="val1" min=1 max=26 required>
         
 
@@ -10,7 +10,7 @@
         
         <input type="number" placeholder="# 1-<?php echo "".$colorcount."" ?>" class="val" name="val2" min=1 required>
         
-        <br>
+        <br><br>
         <button type="submit" name="numColsButton" id="btn-numColors"> Enter </button>
     </form> 
 
