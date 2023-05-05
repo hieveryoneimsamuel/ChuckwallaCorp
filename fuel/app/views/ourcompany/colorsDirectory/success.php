@@ -1,61 +1,50 @@
 <body>
     <form method='GET'> 
     <p>Insert number of rows/cols here (minimum: 1, maximum: 26):</p>
-        <input type="number" class="val" name="val1">
+        <input type="number" class="val" name="val1" min=1 max=26 required>
         <br>
         <p>Insert number of colors here (minimum: 1):</p>
-        <input type="number" class="val" name="val2">
+        <input type="number" class="val" name="val2" min=1 required>
         
         <br>
         <button type="submit" name="numColsButton" id="btn-numColors"> Enter </button>
     </form> 
-
-    
 
     <?php
 
     echo "<p>SUCCESS!<br></p>";
     echo "<p>Number of rows/cols: </p>" . $_GET["val1"]. "<br>";
 
-    echo "<p>Number of colors: </p>" . $_GET["val2"] . "<br><br>";
+    echo "<p>Number of colors: </p>" . $_GET["val2"] . "<br>";
     ?>
-
-
+    
     <form method = "POST">  
         
         <input type="submit" value="Click to add/delete colors" name = 'revisitdb'> </input>
     </form>
 
     <?php
-    
     echo "<table class='colors' >
             <caption>Colors:</caption>";
 
     //$namesColors = array("RED", "ORANGE", "YELLOW", "GREEN", "BLUE", "PURPLE", "GREY", "BROWN", "BLACK", "TEAL");
     $namesColors = array();
-    $hexValsColors = array();
     foreach($colorchoices as $somecolor){
         array_push($namesColors, $somecolor['text']);   
-        array_push($hexValsColors, $somecolor['hv']);
     }
-
-   
-
-
     for($x=0; $x < $_GET['val2']; $x++){
         echo "<tr>
-
             <td class='col-one'>
             <input type='radio' name='current_color' value='$namesColors[$x]' ".($x==0?"checked":"").">
-                <select onSelect={()=>{alert('vv')}} id='row$namesColors[$x]' class='mySelectElements'>";
+                <select id='row$namesColors[$x]' class='mySelectElements'>";
                     $currentColor;
                     for($i=0; $i < $colorcount; $i++){
                         if($i==$x){
-                            echo "<option value='$namesColors[$i]' selected> $namesColors[$i] $hexValsColors[$i] </option>";
+                            echo "<option value='$namesColors[$i]' selected> $namesColors[$i] </option>";
                             $currentColor = $namesColors[$i];
                             continue;
                         }
-                        echo "<option value='$namesColors[$i]'> $namesColors[$i] $hexValsColors[$i] </option>";
+                        echo "<option value='$namesColors[$i]'> $namesColors[$i] </option>";
                         
                     }
                     
@@ -63,15 +52,14 @@
             
                 echo "</select>
             </td>
-            <td class='col-two'>
-
+            <td class='col-two $currentColor'>
                 
             </td>";
             echo "</tr>";
             
     }
     echo "
-        </table>";
+        </table";
     
     echo "<br><br>";
 
@@ -89,7 +77,7 @@
         echo "<tr>
                 <td>$x</td>";
             for($y=0; $y < $_GET['val1']; $y++){
-                echo "<td id = $alphabet[$y]$x> </td>";
+                echo "<td id =$alphabet[$y]$x> </td>";
             }
             
         echo "</tr>";
