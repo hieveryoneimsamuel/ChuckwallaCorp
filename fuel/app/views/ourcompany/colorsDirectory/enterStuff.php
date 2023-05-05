@@ -1,13 +1,15 @@
 <body>
+    
 
+    <h1>ChuckwallaCorp Colors page</h1>
+
+    
     <form method='GET'> 
-        <p>Generate a Color Table by Entering the Following:<br></p>
-        <p>Enter Number of Rows/Columns:</p>
-        <input type="number" placeholder="# 1-26" class="val" name="val1" min=1 max=26 required>
+        <p>To generate a color table, please enter the following:<br></p>
+        <p>Number of rows/cols:  <input type="number" class="val" name="val1" min=1 max=26> </p
         <br>
-        <p>Enter Number of Colors:</p>
-        <input type="number" placeholder="# 1-<?php echo "".$colorcount."" ?>" class="val" name="val2" min=1 required>
-        
+        <p>Number of colors: <input type="number" class="val" name="val2">
+        <?php echo "<p>Size of colors database: " . $colorcount . " (Please enter a integer less than or equal to it)</p>"; ?>
         </p>
         <br>
         <button type="submit" name="numColsButton" id="btn-numColors"> Enter </button>
@@ -20,7 +22,7 @@
             $_GET["val1"] = null;
         
         }
-        echo "<p>Number of Rows/Columns: </p>" . $_GET["val1"]. "<br>";
+        echo "<p>Number of rows/cols: </p>" . $_GET["val1"]. "<br>";
 
         
     }
@@ -29,7 +31,7 @@
         if($_GET["val2"] <1 || $_GET["val2"] > 10){
            $_GET["val2"] = null;
         }
-        echo "<p>Number of Colors: </p>" . $_GET["val2"] . "<br>";
+        echo "<p>Number of colors: </p>" . $_GET["val2"] . "<br>";
     }
 
     ?>
@@ -38,5 +40,3 @@
     
 
 </body>
-
-
