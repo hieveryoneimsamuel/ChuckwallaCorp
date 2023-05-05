@@ -7,6 +7,7 @@
         
 
         <p>Enter Number of Colors:</p>
+        <p>(Choose between: 1 - <?php echo "".$colorcount."" ?> )</p>
         <input type="number" placeholder="# 1-X" class="val" name="val2" min=1 required>
         
         <br>
