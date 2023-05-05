@@ -6,7 +6,6 @@ window.onload = function(){
     const numColumns = parameters.get("val1");
     const alphabet = ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z"];
 
-
     if(numRows !== null){
         console.log("numRows is: " + numRows);
         let rowsUnderConsideration = getRowIDs(numRows);
@@ -14,75 +13,18 @@ window.onload = function(){
             console.log("underConsideration: " + rowsUnderConsideration[i]);
             checkForDuplicates(rowsUnderConsideration[i]);
         }
-        
+
         for(let i = 0; i<numRows; i++){
             for(let j = 0; j < numColumns; j++){
                 const currentId = "" + alphabet[j] + i;
                 bigTableEventListeners(currentId);
             }
-        }  
+        }      
+        
     }   
 
     
 }
-let a;
-
-$(document).ready(function(){
-   
-    console.log("hello world from document.ready");
-    let currColor = $(".mySelectElements select").attr("value");
-    a = currColor;
-    console.log('currColor: ' + currColor);
-    
-    const urlString = window.location.search;
-    const parameters = new URLSearchParams(urlString);
-    const numRows = parameters.get("val2");
-    console.log("numRows: " + numRows);
-    for(let i=0; i<numRows; i++){
-        var name =  'a' + i;
-        name = [];
-        name.push("hello");
-        
-    }
-
-    
-
-
-    
-    
-
-    $(".square-table td").click(function(){
-        $(".colors .col-two").css('background', 'black');
-        $(this).css('background', 'red');
-        
-        
-        
-    })
-});
-
-function getCurrColor(){
-    return currColor;
-}
-
-function bigTableEventListeners(cellId){
-    var currCell = document.getElementById(cellId);
-    currCell.addEventListener('click', ()=>{
-        const radioMenu = document.querySelector('input[name="current_color"]:checked');
-        const selectedRow = radioMenu.parentNode.parentNode;
-      
-       const selectedColTwo = selectedRow.childNodes[3];       
-        /* $("selectedColTwo").html("Test");
-        //Currently not working :( WHY IS IT THREE TO SELECT THE RIGHT TD?
-      */
-
-        const styleAttribute = "background-color: " + radioMenu.value;
-        if(currCell.getAttribute("style") != null){
-            currCell.removeAttribute("style");
-        }
-        else currCell.setAttribute("style", styleAttribute );
-    });
-}
-
 
 function getRowIDs(numRows){
     let namesColors = ["RED", "ORANGE", "YELLOW", "GREEN", "BLUE", "PURPLE", "GREY", "BROWN", "BLACK", "TEAL"];
@@ -120,6 +62,25 @@ function checkForDuplicates(idName){
     });
 }
 
+function bigTableEventListeners(cellId){
+    var currCell = document.getElementById(cellId);
+    currCell.addEventListener('click', ()=>{
+        const radioMenu = document.querySelector('input[name="current_color"]:checked');
+        const selectedRow = radioMenu.parentNode.parentNode;
+      
+      /* const selectedColTwo = selectedRow.childNodes[3];       
+        $("selectedColTwo").html("Test");
+        //Currently not working :( WHY IS IT THREE TO SELECT THE RIGHT TD
+      */
+
+        const styleAttribute = "background-color: " + radioMenu.value;
+        if(currCell.getAttribute("style") != null){
+            currCell.removeAttribute("style");
+        }
+        else currCell.setAttribute("style", styleAttribute );
+    });
+}
+
 function generatePrintview(){
     const urlString = window.location.search;
     const parameters = new URLSearchParams(urlString);
@@ -142,7 +103,7 @@ function generatePrintview(){
                 currCell.setAttribute("class", "col-two");
                 currCell.innerText = "COL2";
             }
-
+            
             currRow.appendChild(currCell);
         }
         printTable.appendChild(currRow);
@@ -158,18 +119,3 @@ function generatePrintview(){
     newCSS.setAttribute('href', 'https://cs.colostate.edu:4444/~ewolving/m1/assets/css/printview.css');
     document.head.appendChild(newCSS);
 }    
-
-
-
-
-
-
-
-
-
-    
-
-
-    
-
-
