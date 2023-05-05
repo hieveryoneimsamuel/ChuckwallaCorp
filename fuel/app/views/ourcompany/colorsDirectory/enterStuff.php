@@ -6,8 +6,8 @@
         <input type="number" placeholder="# 1-26" class="val" name="val1" min=1 max=26 required>
         <br>
         <p>Enter Number of Colors:</p>
-        <input type="number" placeholder="# 1-X" class="val" name="val2" min=1 required>
-        <?php echo "<p>Size of Colors Database: " . $colorcount . " (Enter an Integer Less Than or Equal to it)</p>"; ?>
+        <input type="number" placeholder="# 1-<?php echo "".$colorcount."" ?>" class="val" name="val2" min=1 required>
+        
         </p>
         <br>
         <button type="submit" name="numColsButton" id="btn-numColors"> Enter </button>

@@ -7,7 +7,8 @@
         
 
         <p>Enter Number of Colors:</p>
-        <input type="number" placeholder="# 1-X" class="val" name="val2" min=1 required>
+        
+        <input type="number" placeholder="# 1-<?php echo "".$colorcount."" ?>" class="val" name="val2" min=1 required>
         
         <br>
         <button type="submit" name="numColsButton" id="btn-numColors"> Enter </button>

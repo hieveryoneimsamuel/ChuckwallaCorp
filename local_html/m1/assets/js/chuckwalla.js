@@ -17,6 +17,45 @@ window.onload = function(){
 
     
 }
+let a;
+
+$(document).ready(function(){
+   
+    console.log("hello world from document.ready");
+    let currColor = $(".mySelectElements select").attr("value");
+    a = currColor;
+    console.log('currColor: ' + currColor);
+    
+    const urlString = window.location.search;
+    const parameters = new URLSearchParams(urlString);
+    const numRows = parameters.get("val2");
+    console.log("numRows: " + numRows);
+    for(let i=0; i<numRows; i++){
+        var name =  'a' + i;
+        name = [];
+        name.push("hello");
+        
+    }
+
+    
+
+
+    
+    
+
+    $(".square-table td").click(function(){
+        $(".colors .col-two").css('background', 'black');
+        $(this).css('background', 'red');
+        
+        
+        
+    })
+});
+
+function getCurrColor(){
+    return currColor;
+}
+
 
 function getRowIDs(numRows){
     let namesColors = ["RED", "ORANGE", "YELLOW", "GREEN", "BLUE", "PURPLE", "GREY", "BROWN", "BLACK", "TEAL"];
@@ -76,7 +115,7 @@ function generatePrintview(){
                 currCell.setAttribute("class", "col-two");
                 currCell.innerText = "COL2";
             }
-            
+
             currRow.appendChild(currCell);
         }
         printTable.appendChild(currRow);
@@ -92,3 +131,18 @@ function generatePrintview(){
     newCSS.setAttribute('href', 'https://cs.colostate.edu:4444/~ewolving/m1/assets/css/printview.css');
     document.head.appendChild(newCSS);
 }    
+
+
+
+
+
+
+
+
+
+    
+
+
+    
+
+
