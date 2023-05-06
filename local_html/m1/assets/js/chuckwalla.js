@@ -14,7 +14,7 @@ window.onload = function(){
             //checkForDuplicates(rowsUnderConsideration[i]); Also broken sad days
         }
 
-        for(let i = 0; i<numRows; i++){
+        for(let i = 0; i<numColumns; i++){
             for(let j = 0; j < numColumns; j++){
                 const currentId = "" + alphabet[j] + i;
                 bigTableEventListeners(currentId);
